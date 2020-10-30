@@ -23,33 +23,11 @@
         .responsive {
           text-align: center;
         }
-        
-        @media screen and (max-width: 800px) {
-          .topnav a:not(:first-child) {display: none;}
-          .topnav a.icon {
-            float: right;
-            display: block;
-          }
-        }
-        
-        @media screen and (max-width: 800px) {
-          .topnav.responsive {position: relative;}
-          .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-          .topnav.responsive a {
-            float: none;
-            display: inline-block;
-            text-align: left;
-          }
-        }
-        
-         .acc {
+
+          .acc {
             margin-bottom: 6px;
+            display: none;
         }
-        
         .acc-button {
             display: flex;
             width: 100%;
@@ -70,6 +48,32 @@
         
         .hidden a:hover {
           background-color: #555;
+        }
+        
+        @media screen and (max-width: 800px) {
+            
+          .acc {
+            display: block;
+        }
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        @media screen and (max-width: 800px) {
+          .topnav.responsive {position: relative;}
+          .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .topnav.responsive a {
+            float: none;
+            display: inline-block;
+            text-align: left;
+          }
         }
         </style>
         
