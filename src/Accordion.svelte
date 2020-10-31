@@ -38,6 +38,9 @@
     align-items: center;
     height: 60px;
     font-size: 1.5rem;    
+    background-color: #4FB6C1;
+    border: none;
+    color: white;
 }
 
 .acc-button:hover {
@@ -46,10 +49,16 @@
 	
 .slider {
     padding: 6px;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: fira-sans,sans-serif;
+    background-color: #B9DFE3;
 }
 
+@media screen and (max-width: 800px) {
+    .slider {
+        font-size: 3px;
+    }
+}
 </style>
 
 <div>

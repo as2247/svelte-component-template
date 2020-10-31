@@ -12,9 +12,19 @@
           text-align: center;
           padding: 16px;
           text-decoration: none;
-          font-size: 17px;
+          font-size: 1rem;
         }
-           
+        
+        @media screen and (max-width: 800px) {
+            .topnav {
+              font-size: 0.5rem;
+          }
+        }
+
+        .topnav a:hover {
+            background-color: #555;
+        }
+
         .topnav .icon {
           display: none;
           padding: 10px;
@@ -75,6 +85,17 @@
             text-align: left;
           }
         }
+
+        .responsive-nav {
+            font-size: 1.8rem; 
+            font-family: fira-sans,sans-serif;
+        }
+
+         @media screen and (max-width: 800px) {
+            .responsive-nav {
+                font-size: 0.8rem;
+            }
+        }
         </style>
         
         <script>
@@ -96,7 +117,7 @@
         }
           </script>
         <div>
-            <b><p style="font-size: 1.8rem; font-family: fira-sans,sans-serif;">1. Responsive Navigation Bar</p></b>
+            <b><p class="responsive-nav">1. Responsive Navigation Bar</p></b>
             <p style='text-align: center'>Try resizing the browser!</p>
         </div>
 
